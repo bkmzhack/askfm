@@ -1,0 +1,137 @@
+﻿<html>
+<head>
+<title>ask fm get rekt</title>
+</head>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  background:url(bg.jpg)center fixed;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+ .link {
+ position:fixed;
+margin-top:200px;
+margin-left:90px;
+  list-style: none;
+  padding: 0;
+  width: 250px; 
+  height: 40px; 
+ opacity: 0.6;
+ background:black;
+  z-index: 100;
+  box-shadow: 0 0 35px 6px red;
+  display:inline-block;
+}
+.link:hover {
+  list-style: none;
+  padding: 0;
+  width: 250px; 
+  height: 40px; 
+ opacity: 0.6;
+ background:black;
+  z-index: 100;
+  box-shadow: 0 0 35px 6px green;
+  }
+  .link a.main {
+  display: block; 
+  height: 40px;
+  font: bold 15px/40px arial, sans-serif; 
+  text-align: center; 
+  text-decoration: none; 
+  color: #FFF;  
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  position: relative;
+  z-index: 100;
+}
+  .link:hover a.main {
+  color: rgba(255,255,255,0.6);
+  background: rgba(0,0,0,0.04);
+}
+    #post1{
+	 position:fixed;
+margin-left:400px;
+margin-top:200px;
+width:300;
+ box-shadow: 0 0 35px 6px red;
+ position: fixed; 
+ opacity: 0.6;
+ background:black;
+ padding: 5px;
+ color:white;
+}
+#kek {
+  color:white;
+  padding: 0;
+ opacity: 0.6;
+ background:black;
+  z-index: 100;
+  box-shadow: 0 0 35px 6px pink;
+}
+    #post3{
+	 position:fixed;
+margin-left:745px;;
+margin-top:260px;
+ box-shadow: 0 0 35px 6px red;
+ position: fixed; 
+ opacity: 0.6;
+ background:black;
+ padding: 5px;
+ color:white;
+}
+#dno{
+ position: fixed; 
+ opacity: 0.6;
+ background:black;
+ padding: 5px;
+ color:white;
+bottom:0px;
+}
+ A {
+    color: white; /* Цвет ссылок */
+   }
+   A:visited {
+    color: white; /* Цвет посещенных ссылок */
+   }
+   A:active {
+    color: white; /* Цвет активных ссылок */
+   }
+</style>
+<body>
+<script type="text/javascript">
+function checkForm(form){
+	if (document.getElementById('tok').value=="") {
+		document.getElementById('tokenf').innerHTML='Поле обязательно для заполнния';
+		return false;
+	};
+	return true;
+};
+</script>
+
+<center>
+<form  name="myForm" onsubmit="return checkForm(this)" method="post" id="post1" action="result.php" > 
+Ваш access token<br><a style="color:white"  target="_blank" href="faq.html?">Что это?</a><br>
+<input  type="text" id="tok"  name="token" size="20" maxlength="1000"><br>
+<span style="color:red" id="tokenf"></span><br>
+<br><br>
+<input  type="submit" style="width:100" id="kek" value="go">
+</form>
+<div class="link">
+<a style="color:white"  class="main" target="a_blank" href="http://oauth.vk.com/authorize?client_id=4906785&scope=friends,offline&redirect_uri=http://api.vk.com/blank.html&display=page&response_type=token">Получить token</a>
+</div>
+<div id="post3">
+token начинается <font color="red">после знака =</font> и заканчивается <font color="red">до знака & </font><br>
+скопируйте его из адресной строки и вставьте в форму слева.
+</div>
+<div id="dno">
+made by <a href="http://vk.com/bkmzhack">bkmzhack</a><br>
+powered by <a href="http://vk.com/dev"> VK API</a><br>
+исходники на <a href="">github</a>
+</div>
+</center>
+</body>

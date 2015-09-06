@@ -1,0 +1,145 @@
+﻿<html>
+<head>
+<title>Главная</title>
+</head>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  background:url(bg.jpg)center fixed;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+ .link {
+ position:fixed;
+margin-top:200px;
+margin-left:90px;
+  list-style: none;
+  padding: 0;
+  width: 250px; 
+  height: 40px; 
+ opacity: 0.6;
+ background:black;
+  z-index: 100;
+  box-shadow: 0 0 35px 6px red;
+  display:inline-block;
+}
+.link:hover {
+  list-style: none;
+  padding: 0;
+  width: 250px; 
+  height: 40px; 
+ opacity: 0.6;
+ background:black;
+  z-index: 100;
+  box-shadow: 0 0 35px 6px green;
+  }
+  .link a.main {
+  display: block; 
+  height: 40px;
+  font: bold 15px/40px arial, sans-serif; 
+  text-align: center; 
+  text-decoration: none; 
+  color: #FFF;  
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  position: relative;
+  z-index: 100;
+}
+  .link:hover a.main {
+  color: rgba(255,255,255,0.6);
+  background: rgba(0,0,0,0.04);
+}
+    #post1{
+margin-top:100px;
+width:300;
+ box-shadow: 0 0 35px 6px red;
+ opacity: 0.6;
+ background:black;
+ padding: 5px;
+ color:white;
+}
+    #post2{
+width:500;
+margin-top:60px;
+ box-shadow: 0 0 35px 6px red;
+ opacity: 0.6;
+ background:black;
+ padding: 5px;
+ color:white;
+}
+#kek {
+  color:white;
+  padding: 0;
+ opacity: 0.6;
+ background:black;
+  z-index: 100;
+  box-shadow: 0 0 35px 6px pink;
+}
+    #post3{
+	 maring-top:200px;
+ box-shadow: 0 0 35px 6px red; 
+ opacity: 0.6;
+ background:black;
+ padding: 5px;
+ color:white;
+}
+#dno{
+ position: fixed; 
+ opacity: 0.6;
+ background:black;
+ padding: 5px;
+ color:white;
+bottom:0px;
+}
+ A {
+    color: white; /* Цвет ссылок */
+   }
+   A:visited {
+    color: white; /* Цвет посещенных ссылок */
+   }
+   A:active {
+    color: white; /* Цвет активных ссылок */
+   }
+</style>
+<body>
+<script type="text/javascript">
+function checkForm(form){
+	if (document.getElementById('tok').value=="") {
+		document.getElementById('tokenf').innerHTML='Поле обязательно для заполнния';
+		return false;
+	};
+	return true;
+};
+</script>
+<center>
+<img src="title.png">
+<div id="post3">
+Хотите узнать кто заходит к вам на askfm? Тогда вы попали прямо по адресу!<br>
+Заказать услугу вы можете у наших администраторов<br>
+<a target="_blank" href="http://vk.com/bkmzhack">Создатель</a><br>
+<a target="_blank" href="http://vk.com/">Менеджер</a>
+</div>
+<div id="post1">
+А уже заказавших пользователей ждет форма для входа внизу :)
+</div>
+<div id="post2">
+<form method="post" onsubmit="return checkForm(this)" name="myForm2"  action="auth.php">
+Ваш ключ авторизации (получается у администраторов)<br> 
+<input id="tok" type="text" name="key" size="50" pattern=".{8,}" maxlength="1000"><br>
+<span style="color:red" id="tokenf"></span>
+<br><br>
+<input  type="submit"  style="width:100; name="gogogo" target="a_blank" value=" go ">
+</form>
+</div>
+</center>
+<div id="dno">
+made by <a href="http://vk.com/bkmzhack">bkmzhack</a><br>
+powered by <a href="http://vk.com/dev"> VK API</a><br>
+исходники на <a href="">github</a>
+</div>
+</body>
+</html>
